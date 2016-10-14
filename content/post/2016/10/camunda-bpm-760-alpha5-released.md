@@ -16,6 +16,8 @@ Camunda 7.6.0-alpha5 is here and it is packed with new features. The highlights 
 * Pluggable Deployment Cache
 * [10 Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.6.0-alpha5)
 
+[List of known Issues](https://app.camunda.com/jira/issues/?jql=affectedVersion%20%3D%207.6.0-alpha5)
+
 The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14692) are available in Jira.
 
 You can [Download Camunda For Free](https://camunda.org/download/)
