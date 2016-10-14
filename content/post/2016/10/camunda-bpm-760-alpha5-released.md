@@ -84,7 +84,7 @@ Consider the following example:
 
 {{< figure class="main teaser no-border" src="signal-events-interrupts-parallel-branch.png">}}
 
-The signal thrown on the upper branch is supposed to cancel the task on the bottom branch. This always worked, but the problem with using signals is that they are broadcast. So while the signal sent from the upper branch would effectively cancel the task on the bottom branch in the current process instance, it would also trigger all catching signal events with the same name in all other process instances.
+The signal thrown on the upper branch is supposed to cancel the task on the bottom branch. This always worked, but the problem with using signals is that they are broadcasted. So while the signal sent from the upper branch would effectively cancel the task on the bottom branch in the current process instance, it would also trigger all catching signal events with the same name in all other process instances.
 
 This release introduces the possibility to use expressions in signal names and by this allows to scope the signal to the current process instance:
 
