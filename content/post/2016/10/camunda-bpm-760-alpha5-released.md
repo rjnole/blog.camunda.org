@@ -63,7 +63,7 @@ This feature has been requested quite frequently by our users: *cleaning up hist
 
 {{< figure class="main teaser" src="cockpit-batch-delete.png">}}
 
-This feature is part of the bigger "Batch Operations" cluster in the context of which we have already provided the possibility to cancel large numbers of running process instances. Currently on it's way but not yet part of this release is the feature to set job the retires as batch.
+This feature is part of the bigger "Batch Operations" cluster in the context of which we have already provided the possibility to cancel large numbers of running process instances. Currently on it's way but not yet part of this release is the feature to set job retries as batch.
 
 # Performance Improvements of DMN Engine
 
