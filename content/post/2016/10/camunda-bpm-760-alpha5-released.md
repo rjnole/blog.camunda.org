@@ -57,7 +57,7 @@ For more information see the documentation of [conditional events](https://docs.
 
 Note that there a currently known issues ([CAM-6862](https://app.camunda.com/jira/browse/CAM-6862)), which we are addressing for the next alpha release.
 
-# Bulk Delete of Historic Process Instances
+# Batch Delete of Historic Process Instances
 
 This feature has been requested quite frequently by our users: *cleaning up historic data* after it is not needed any more. This release introduces both an API and a Cockpit Plugin (UI) to batch delete historic Process Instances based on either a list of Ids or a search query:
 
@@ -67,8 +67,7 @@ This feature is part of the bigger "Batch Operations" cluster in the context of 
 
 # Performance Improvements of DMN Engine
 
-A potential customer evaluated our DMN Engine against another very popular open source rule engine in a project. We were already a lot faster but when they showed us the numbers we thought that this could be better still.
-So we introduced caching of Script Engines and Compiled Scripts (Groovy, ...) which made it even faster.
+A potential customer evaluated our DMN Engine against another very popular open source business rules engine in a project. Of course our engine was a lot faster but when they showed us the numbers we thought that it could be better still. So we introduced caching of Script Engines and Compiled Scripts (Groovy, …) which made it even faster.
 
 Caching of Compiled scripts is something which we already support for some time in BPMN and now users can enjoy the same benefits and fast performance in DMN.
 
