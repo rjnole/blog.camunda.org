@@ -31,8 +31,31 @@ This release introduces support for the BPMN Conditional Event. This is the last
 * creating a new token when a condition is fulfilled.
 
 This is a extremely powerful features which allows users to build very dynamic and event driven processes.
+See for example the following process model:
 
-TODO: Example
+{{< figure class="main teaser no-border" src="conditionalEvent.png">}}
+
+If the state is after processing invalid, the work will be repeated. Also if the processing should be canceled and before that the current state should be archived, the conditional event can be used.
+
+In Camunda the conditional events are data driven, they are evaluated if a variable changes.
+Say the execution stays in the last user task. Is the following code executed, the conditional boundary event will be triggered.
+
+```java
+  taskService.setVariable(task.getId(), "state", "invalid");
+```
+
+A corresponding conditional event definition can look like this:
+
+```xml
+  <conditionalEventDefinition>
+    <condition xsi:type="tFormalExpression">${state == "invalid"}</condition>
+  </conditionalEventDefinition>
+```
+
+For more information see the documentation of [conditional events](https://docs.camunda.org/manual/develop/reference/bpmn20/events/conditional-events/).
+
+
+Note that there a currently known issues ([CAM-6862](https://app.camunda.com/jira/browse/CAM-6862)), which we are addressing for the next alpha release.
 
 # Bulk Delete of Historic Process Instances
 
