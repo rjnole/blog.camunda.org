@@ -6,7 +6,7 @@ date = "2016-10-25T16:00:00+01:00"
 title = "Camunda Modeler 1.4 Released"
 +++
 
-We are proud to announce version 1.4 of the Camunda Modeler! In this release we are introducing new element template features and improving the stability of the BPMN and DMN Modeler.
+We are proud to announce version 1.4 of the Camunda Modeler! In this release we are introducing new *element template* features and improving the stability of the BPMN and DMN Modeler.
 
 [Download](https://camunda.org/bpmn/tool/) the new version from [camunda.org](https://camunda.org/bpmn/tool/).
 
@@ -28,7 +28,7 @@ We are proud to announce version 1.4 of the Camunda Modeler! In this release we 
 * Define `camunda:executionListener` bindings
 * Hide input fields for bindings with the input type `Hidden`
 * Load element templates dynamically on diagram load rather than application start
-* Be able to put element templates in a .camunda folder relative to diagrams
+* Be able to load element templates from a default folder (`.camunda`)
 * Recognize template errors in the Camunda Modeler log section
 
 Learn more about element templates in the [documentation](https://github.com/camunda/camunda-modeler/tree/master/docs/element-templates) or take a look at the updated [sample template definitions](https://github.com/camunda/camunda-modeler/blob/master/resources/element-templates/samples.json).
@@ -36,12 +36,12 @@ Learn more about element templates in the [documentation](https://github.com/cam
 
 ## DMN Simple Mode Improvements
 
-Besides fixing some bugs in the DMN toolkit, we also made several improvements to the simple mode. We improved the parsing for numeric expressions so that you should get less unexpected [expression] fields. We also improved how the simple mode deals with output cells.
+Besides fixing some bugs in the DMN toolkit, we also made several improvements to the simple mode. We improved parsing for numeric expressions so that you should get less unexpected `[expression]` fields. We also improved how the simple mode deals with output cells.
 
 
 ## Other Improvements
 
-In BPMN default flows are now kept when reconnecting the sequence flow end to another activity (see [details](https://forum.bpmn.io/t/moving-outgoing-connection-start-point-from-gateway-causes-default-flow-to-be-lost/1079)).
+In BPMN default flows are now kept when reconnecting the *sequence flow* end to another *activity* (see [details](https://forum.bpmn.io/t/moving-outgoing-connection-start-point-from-gateway-causes-default-flow-to-be-lost/1079)).
 
 ## What's next?
 
